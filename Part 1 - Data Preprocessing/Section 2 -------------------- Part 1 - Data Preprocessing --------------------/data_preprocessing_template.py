@@ -7,6 +7,7 @@ import pandas as pd # Import/manage datasets
 
 # Importing the dataset
 dataset = pd.read_csv('Data.csv')
+# X should always be a matrix
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 3].values
 
